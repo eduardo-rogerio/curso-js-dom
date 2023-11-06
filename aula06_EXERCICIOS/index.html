@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      p {
+        color: red;
+    }
+    </style>
+    <title>Aula 05 QuerySelector</title> 
+  </head>
+  <body>
+    <h3>Este texto tem<i><u>importância</u></i><h3>
+    <p id="primeiro">Primeiro parágrafo</p>
+  
+    <p id="segundo">Segundo parágrafo</p>
+
+    <div class="noticia">
+        <h1>Titulo de notícia um</h1>
+        <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+    </div>
+    <div>
+        <h1>Titulo de notícia dois</h1>
+        <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+    </div>
+
+    <ul>
+      <li>Item 1</li>  
+      <li>Item 2</li>  
+      <li>Item 3</li>  
+      <li>Item 4</li>  
+    </ul>
+    <!-- javascript -->
+<script>
+      // innerHTML
+      // outerHTML
+      // innerText
+  /*
+  querySelector
+  querySelectorAll
+  */
+  // let e = document.querySelector('#segundo')
+    let e = document.querySelector('ul > li:last-child')
+
+    console.log(e)
+</script>
+  </body>
+</html>
