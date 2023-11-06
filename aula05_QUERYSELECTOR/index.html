@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      p {
+        color: red;
+    }
+    </style>
+    <title>Aula 05 QuerySelector</title> 
+  </head>
+  <body>
+
+    <p id="primeiro">Primeiro parágrafo</p>
+  
+    <p id="segundo">Segundo parágrafo</p>
+
+    <div>
+      Texto 1 dentro de um div
+    </div>
+     
+    <div>
+      Texto 2 dentro de um div
+    </div>
+
+    <ul>
+      <li>Item 1</li>  
+      <li>Item 2</li>  
+      <li>Item 3</li>  
+      <li>Item 4</li>  
+    </ul>
+
+<script>
+  /*
+  querySelector
+  querySelectorAll
+  */
+  // let e = document.querySelector('#segundo')
+    let e = document.querySelector('ul > li:last-child')
+
+    console.log(e)
+</script>
+  </body>
+</html>

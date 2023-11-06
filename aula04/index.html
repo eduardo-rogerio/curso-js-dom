@@ -9,16 +9,19 @@
   </head>
   <body>
 
-    <h3>Título em HTML</h3>
+    <h3 name="testeName">Título em HTML</h3>
 
     <p>Parágrafo de HTML</p>
 
-    <div>
+    <p>Parágrafo 2 de HTML</p>
+
+    <div id="conteudo">
       Este texto esta dentro de um div
     </div>
 
     <form action="" method="post">
-      <input type="text" name="text_usuario">
+      <label for="text_usuario">titulo do campo</label>
+      <input class="teste" type="text" name="text_usuario">
     </form>
 
 <script>
@@ -29,7 +32,7 @@
     getElementsByClassName
     */
     /* console.log(document.getElementsByTagName('p')[0].innerText) */
-document.getElementsByTagName('p')[0].innerText = 'Parágrafo Alterado'
+    document.getElementsByTagName('label')[0].innerText = 'teste 235 label'
 </script>
   </body>
 </html>  
