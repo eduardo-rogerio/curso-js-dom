@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .noticias {
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid rgb(150, 150, 150);
+        background-color: rgb(240, 240, 240);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 50px;
+        width: 400px;
+    }  
+    </style>
+    <title>Aula 09</title> 
+  </head>
+  <body>
+    <div class="noticias">
+      <h1>Titulo da noticias</h1>
+      <h3 id="sumario_da_noticia" >Sumário da noticia</h3>
+      <img src="new_1.jpg" alt="" width="400px">
+      <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.  
+    </div>
+<script>
+      // hasAttribute
+      let elemento = document.querySelector('h3')
+      if(elemento.hasAttribute('id')){
+        console.log('Sim')
+      }
+
+      // getAttribute
+      if(elemento.hasAttribute('id')){
+        console.log(elemento.getAttribute('id'))
+      }
+
+      // setAttribute
+      elemento.setAttribute('title','Valor do titulo')
+      
+      // removeAttribute
+         let imagem = document.querySelector('img')
+      // imagem.removeAttribute('src')
+
+      // attributes
+      console.log(imagem.attributes['src'])
+    </script>
+  </body>
+</html>
