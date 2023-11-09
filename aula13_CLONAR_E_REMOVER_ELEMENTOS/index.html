@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aula 10</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+       .container {
+          margin: 20px;
+          padding: 20px;
+          border: 1px solid lightblue;
+       }
+ 
+     </style> 
+  </head>
+  <body>
+    <div id="container" class="container">
+      <p>Dentro do div</p>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+      </ul>
+    </div>
+  <script> 
+    //clone
+    //let div = document.querySelector(".container").cloneNode('true')
+    //document.querySelector('#container').after(div)
+
+    //remover elementos
+    // document.querySelector('#container').remove()
+
+    //remover elemento li
+    document.querySelectorAll("#container > ul > li")[3].remove()
+  </script>
+  </body>
+</html>
