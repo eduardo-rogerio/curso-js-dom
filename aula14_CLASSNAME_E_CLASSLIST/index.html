@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aula 14</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+       .p-1 {
+        background-color: yellow;
+       }
+
+       .p-2 {
+        background-color: green;
+       }
+
+       .espaco {
+        padding: 10px;
+       }
+ 
+     </style> 
+  </head> 
+  <body>
+      <p class="p-1">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+  <script>
+    // o className é uma propriedade que permite ler e alterar as classes do elemento (string)
+    let p = document.querySelector("p")
+    //p.className = 'p-2 espaco'
+
+    // classList
+    p.classList.add('espaco')
+    p.classList.toggle('p-1')
+  </script>
+  </body>
+</html>
