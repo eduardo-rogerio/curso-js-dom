@@ -18,11 +18,10 @@
       <h3>Lorem ipsum dolor sit amet, qui minim labore adipi.</h3>
       <p style="color:red; margin-top: 20px;">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
   <script>
-    let p = document.querySelector("p")
-    p.style.backgroundColor = 'red'
-    p.style.borderWidth = '2px'
-    p.style.borderStyle = 'dashed'
-    p.style.cssText = 'background-color: blue; color: white'
+    let propriedades = getComputedStyle(document.querySelector("h3"))
+    console.log(propriedades.color)
+    console.log(propriedades.marginTop)
+    console.log(propriedades.border)
   </script>
   </body>
 </html>
