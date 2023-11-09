@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aula 10</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+
+       .container {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 50px auto;
+          width: 400px;
+          padding: 20px;
+          border: 1px solid gray;
+          text-align: center;
+       }
+ 
+       p {
+          text-align: center;
+          background-color: rgb(255, 0, 0);
+          color: white;
+       }
+
+    </style> 
+  </head>
+  <body>
+    <div class="container">
+      Dentro do div
+    </div>
+  <script> 
+
+    let div = document.querySelector(".container")
+
+    //insertAdjacentText
+
+    // div.insertAdjacentText('beforebegin','Antes do div')
+    // div.insertAdjacentText('afterbegin','No inicio do div')
+    // div.insertAdjacentText('beforeend','No fim do div')
+    // div.insertAdjacentText('afterend','Depois do div')
+
+    //insertAdjacentHTML
+
+    // div.insertAdjacentHTML('beforebegin','<p>Antes do div<p>')
+    // div.insertAdjacentHTML('afterbegin','<p>No inicio do div<p>')
+    // div.insertAdjacentHTML('beforeend','<p>No fim do div<p>')
+    // div.insertAdjacentHTML('afterend','<p>Depois do div<p>')
+
+    //insertAdjacentElement
+    let paragrafo1 = document.createElement('p')
+    let paragrafo2 = document.createElement('p')
+    let paragrafo3 = document.createElement('p')
+    let paragrafo4 = document.createElement('p')
+
+    paragrafo1.innerText = 'Antes do div'
+    paragrafo2.innerText = 'No inicio do div'
+    paragrafo3.innerText = 'No fim do div'
+    paragrafo4.innerText = 'Depois do div'
+
+     div.insertAdjacentElement('beforebegin',paragrafo1)
+     div.insertAdjacentElement('afterbegin',paragrafo2)
+     div.insertAdjacentElement('beforeend',paragrafo3)
+     div.insertAdjacentElement('afterend',paragrafo4)
+  </script>
+  </body>
+</html>
