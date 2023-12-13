@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=" en">
+  <head>
+    <title>Aula 30</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      div {
+        margin-bottom: 10px;
+    }
+      .focus {
+        background-color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post" name="frm_login">
+      <div>
+        <label for="tarefa">Tarefa</label>
+        <input type="text" name="tarefa" id="tarefa">
+      </div>
+      <div>
+        <label for="duracao">Quando Tempo</label>
+        <select name="duracao">
+          <option value="1">1 dia</option>
+          <option value="2">2 dia</option>
+          <option value="3">3 dia</option>
+        </select>
+      </div>
+    </form>
+    <script>
+      let tarefa = document.querySelector('[name="tarefa"]')
+      let duracao = document.querySelector('[name="duracao"]')
+
+      // chage
+      tarefa.addEventListener('change', () => {
+        console.log('alterado')
+    })
+      duracao.addEventListener('change', () => {
+        console.log('select alterado')
+    })
+
+      // cut
+      tarefa.addEventListener('cut', () => {
+        console.log('cortado')
+    })
+      // copy
+      tarefa.addEventListener('copy', () => {
+        console.log('copiado')
+    })
+
+    // paste
+      tarefa.addEventListener('paste', () => {
+        console.log('colado')
+    })
+
+    </script>
+  </body>
+</html>
