@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang=" en">
+  <head>
+    <title>Aula 31</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      div {
+        margin-bottom: 10px;
+    }
+      .focus {
+        background-color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post" name="frm_login" id="formulario">
+      <div>
+        <label for="usuario">Usuario</label>
+        <input type="text" name="usuario" id="usuario">
+      </div>
+      <div>
+        <label for="senha">Senha</label>
+        <input type="password" name="text_senha" id="senha">
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+    <script>
+      let formulario = document.querySelector('#formulario')
+      formulario.addEventListener('submit', (evento) => {
+        console.log('teste')
+        evento.preventDefault()
+    })
+
+    </script>
+  </body>
+</html>
